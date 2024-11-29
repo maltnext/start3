@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Ensure no margins, padding, or overflow on the page */
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Disable scrolling */
+      width: 100%;
+      height: 100%;
+    }
+    /* Make sure the iframe fits perfectly */
+    .iframe-container {
+      position: relative;
+      width: 100vw; /* Use viewport width */
+      height: 100vh; /* Use viewport height */
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Fill container width */
+      height: 100%; /* Fill container height */
+      border: none; /* Remove any iframe borders */
+      pointer-events: none; /* Disable interaction with the iframe */
+    }
+    /* Remove hover effects globally */
+    iframe:hover, .iframe-container:hover {
+      box-shadow: none;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <iframe 
+      src="https://giphy.com/embed/9t8i5mVyTNF188lOY8" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
